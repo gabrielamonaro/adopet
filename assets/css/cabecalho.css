@@ -1,0 +1,99 @@
+.header-background{
+    background-image: url(/assets/img/background/header\ -\ design.svg);
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-size: calc(100% - 20px); 
+    height: 100%;
+    width: 100vw;
+    max-width: 560.97px; 
+    height: 470px;
+    position: absolute;
+    top: 0;
+    left:0; 
+    z-index: -1;
+}
+
+.menu-navegacao{
+    width: 100vw;
+    display: flex;
+}
+
+.lista-de-navegacao{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    width: 100vw;
+    padding: 10px ; 
+    padding-top: 40px ; 
+}
+
+
+.lista-icones-home{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 60%;
+    padding: 0;
+}
+
+.lista-icones-home li:nth-child(1){
+    width: 19.2px;
+}
+
+.lista-icones-home li:nth-child(2){
+    width: 23.14px;
+}
+
+.lista-de-navegacao li:nth-child(2){
+    width: 40px;
+}
+
+.hidden{
+    visibility: hidden;
+}
+
+.icones{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.icones li{
+    margin: 0;
+}
+
+
+@media screen and (max-width: 767px) {
+    .logo-header{
+        visibility: hidden;
+    }  
+
+    .icones{
+        max-width: 350px;
+        margin-left: -90px;
+    }
+
+}
+
+@media screen and (min-width: 768px) {
+    .logo-header{
+        margin: 10px 0 0 20px;
+    }
+
+    .icones{
+        display: flex;
+        justify-content: space-around;
+        width: 50%;
+        padding: 0 ;
+        max-width: 300px; 
+    }
+
+    .lista-icones-home{
+        justify-content: space-between;
+        padding: 0;
+        width: 60%;
+        max-width: 470px; 
+    }
+}
+

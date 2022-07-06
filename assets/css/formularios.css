@@ -1,0 +1,135 @@
+.logo{
+    width: 32%;
+    min-width: 186.67px;
+    margin-top: 20%;
+}
+
+label{
+   font-weight: 400; 
+}
+
+.label-cinza{
+    font-weight: 400;
+    text-align: center;
+    width: 100%;
+    color: var(--cinza-medio);
+    font-family: var(--poppins);
+}
+
+.label-azul{
+    font-weight: 600;
+    text-align: left;
+    width: 100%;
+    color: var(--azul-escuro)
+}
+
+.formulario-cadastro{
+    color: var(--cinza-medio);
+    width: 45%;
+}
+
+
+.background-cinza{
+    background-color: var(--cinza-background);
+}
+
+.caixa-input, 
+.caixa-input-textarea{
+    box-shadow: 0px 2px 3px var(--cinza-claro-input);
+    border: transparent;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.perfil{
+    background-image: url(/assets/img/Ellipse\ 2.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 50%;
+    height: 50px;
+    width:40px;
+}
+
+.editar-foto{
+    color: var(--coral-escuro);
+    font-size: 12px;
+    font-family: var(--poppins);
+}
+
+.formulario-mensagem, 
+.formulario-perfil{
+    background-color: var(--cinza-background);
+    font-family: var(--poppins);
+    padding: 15px;
+    border-radius: 9px;
+    margin: 0 5px 15px;
+}
+
+.caixa-input{
+    height: 40px;
+}
+
+.caixa-input::placeholder, 
+.caixa-input-textarea::placeholder{
+    color: var(--cinza-claro-input);
+    font-size: 12px;
+}
+
+.background-cinza::placeholder{
+        text-align: center; 
+        color: var(--cinza-claro-input);
+        font-size: 12px;
+}
+
+.senha{
+    background-image: url(/assets/img/icones/icone-olho.svg);
+    background-repeat: no-repeat;
+    background-position: right 10px center ;
+
+}
+
+.formulario-login{
+    margin-bottom: 70%;
+}
+
+.secao-botao{
+    display: flex;
+    justify-content: center;
+}
+
+.caixa-input-textarea{
+    height: 172px;
+}
+
+.foto-input{
+    width: 80px;
+    height: auto;
+}
+
+@media screen and (max-width: 767px) {
+    .formulario-cadastro{
+        max-width: 400px;
+    }
+    
+}
+
+@media screen and (min-width: 768px) {
+
+    .caixa-input::placeholder, 
+    .caixa-input-textarea::placeholder{
+    font-size: 14px;
+}
+
+.logo{
+    margin-top: 10%;
+}
+
+}
+
+@media screen and (min-width: 1016px) {
+
+
+.logo{
+    margin-top: 5%;
+}
+}

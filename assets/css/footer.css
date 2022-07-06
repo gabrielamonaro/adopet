@@ -1,0 +1,8 @@
+footer{
+    background-color: var(--verde);
+    color: var(--branco);
+    font-family: var(--poppins);
+    padding: 45px;
+    text-align: center;
+    font-size: 16px;
+}

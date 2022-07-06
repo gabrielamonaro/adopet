@@ -1,0 +1,126 @@
+:root{
+    --verde: #36D6AD;
+    --cinza-escuro: #2D2B2C;
+    --branco: #FFFFFF;
+    --bege-escuro: #DEB180;
+    --preto: #1A1A1A;
+    --laranja: #F08641;
+    --cinza-claro: #7A796E;
+    --cinza-medio: #737380;
+    --bege-claro: #FCF0E3;
+    --amarelo: #FDBF12;
+    --coral-escuro: #FC7071;
+    --coral-claro: #FF9D9E;
+    /* --azul-escuro: rgb(55,114,255); */
+    --azul-escuro: #3772FF;
+    --cinza-background: #F6F6F6;
+    --cinza-claro-input: #BCBCBC;
+
+    --ibm-plex-sans: 'IBM Plex Sans', sans-serif;
+    --poppins: 'Poppins', sans-serif;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+.botao{
+    background-color: var(--coral-escuro);
+    color: var(--branco);
+    font-family: var(--poppins);
+    font-weight: bold;
+    border-radius: 8px;
+    border-color: transparent;
+    padding: 10px;
+    display: block;
+    font-size: 16px;
+    width: 148px;
+    box-shadow: none;
+    margin-top: 30px;
+    margin-bottom: 20%;
+}
+
+.botao:hover{
+    background-color: var(--coral-claro);
+    border: none;
+    width: 148px;
+    height: auto;
+}
+
+.shadow-botao{
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.501);
+}
+
+.botao-destaque{
+    width: 100%;
+    margin: 5px;
+}
+
+.botao-destaque:hover{
+    width: 100%;
+}
+
+
+.painel{
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.painel-texto{
+    color: var(--azul-escuro);
+    width: 70%;
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 10%;
+    font-size: 16px;
+    font-family: var(--poppins);
+}
+
+.background-patas{
+    background-image: url(/assets/img/Patas.svg);
+    height: 150px;
+    width: 200px;
+    background-repeat: no-repeat;
+    position: absolute;
+    background-position: right 0 top;
+    right: 0;
+}
+
+.background-vertical{
+    background-image: url(/assets/img/background/Forma-vertical.svg);
+    position: absolute;
+    height: 415px ;
+    width: 84.03px;
+    left: 0;
+    background-position: right 0 bottom;
+    background-repeat: no-repeat;
+    transform: scale(-1, 1);
+    margin-top: 40%;
+    z-index: -1;
+}
+
+@media screen and (min-width: 768px) {
+    .painel-texto{
+        max-width: 500px;
+        margin-bottom: 3%;
+    }
+    
+
+    .background-vertical{
+        background-image: url(/assets/img/background/Forma-vertical.svg);
+        position: absolute;
+        height: 415px ;
+        width: 84.03px;
+        left: 0;
+        background-position: right 0 bottom;
+        background-repeat: no-repeat;
+        transform: scale(-1, 1);
+        margin-top: 30%;
+        z-index: -1;
+    }
+}

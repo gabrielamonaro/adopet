@@ -1,0 +1,90 @@
+main{
+    height: auto;
+} 
+
+.app{
+    background-color: var(--azul-escuro);
+}
+
+
+.home{
+    padding-top: 10%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo-principal{
+    width: 186.67px;
+}
+
+
+.painel-principal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 75%;
+    height: auto;
+    max-width: 344px;
+}
+
+.subtitulo{
+    color: var(--branco);
+    font-family: var(--ibm-plex-sans);
+    font-size: 26px;
+    font-weight: 400;
+}
+
+.frase-convite{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: var(--poppins);
+    color: var(--branco);
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 25px;
+    width: 100%;
+}
+
+.conjunto-botoes-home{
+    margin-bottom: 30px;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ilustracao{
+    z-index: -1;
+    margin-right: 40px;
+    margin-bottom: -18px;
+    height: 313px;
+    background-image: url(/assets/img/ilustracao.svg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: contain; 
+    width: 100%;
+}
+
+.background-vertical-home{
+    background-image: url(/assets/img/background/Forma-vertical.svg);
+    position: absolute;
+    height: 415px ;
+    width: 84.03px;
+    right: 0;
+    background-position: right 0;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
+@media screen and (min-width: 768px) {
+    .painel-principal{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 55%;
+        max-width: 344px;
+        height: auto;
+    }
+}
