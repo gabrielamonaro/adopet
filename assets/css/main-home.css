@@ -1,32 +1,16 @@
-main{
-    height: auto;
-} 
-
 .app{
     background-color: var(--azul-escuro);
 }
 
-
 .home{
     padding-top: 10%;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
-
-.logo-principal{
-    width: 186.67px;
-}
-
 
 .painel-principal{
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 75%;
-    height: auto;
-    max-width: 344px;
+    width: 100vw;
 }
 
 .subtitulo{
@@ -36,29 +20,14 @@ main{
     font-weight: 400;
 }
 
-.frase-convite{
-    margin-top: 20px;
-    margin-bottom: 20px;
-    font-family: var(--poppins);
+.painel-texto{
     color: var(--branco);
-    font-size: 16px;
-    font-weight: 300;
-    line-height: 25px;
-    width: 100%;
-}
-
-.conjunto-botoes-home{
-    margin-bottom: 30px;
-    width: 80%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    margin-top: 2%;
 }
 
 .ilustracao{
     z-index: -1;
-    margin-right: 40px;
-    margin-bottom: -18px;
+    margin: 2% 40px -18px 0;
     height: 313px;
     background-image: url(/assets/img/ilustracao.svg);
     background-position: bottom;
@@ -66,6 +35,11 @@ main{
     background-size: contain; 
     width: 100%;
 }
+ 
+ .logo-principal{
+    display: flex; 
+    justify-content: center;
+} 
 
 .background-vertical-home{
     background-image: url(/assets/img/background/Forma-vertical.svg);
@@ -78,13 +52,33 @@ main{
     z-index: -1;
 }
 
-@media screen and (min-width: 768px) {
-    .painel-principal{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 55%;
-        max-width: 344px;
-        height: auto;
+@media screen and (max-width: 767px) {
+    .botao{
+        width: 190px;
     }
+
+    .logo-principal{
+        width: 52%;
+    }
+}
+
+@media screen and (min-width: 500px) {
+
+    .painel-texto{
+         margin-bottom: 4%; 
+    }
+
+}
+
+@media screen and (min-width: 1000px) {
+    .painel-principal{
+        margin-top: -5%;
+    } 
+}
+
+@media screen and (min-width: 1440px) {
+
+    .painel-principal{
+        margin-top: -10%;
+    }  
 }

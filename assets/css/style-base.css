@@ -11,7 +11,6 @@
     --amarelo: #FDBF12;
     --coral-escuro: #FC7071;
     --coral-claro: #FF9D9E;
-    /* --azul-escuro: rgb(55,114,255); */
     --azul-escuro: #3772FF;
     --cinza-background: #F6F6F6;
     --cinza-claro-input: #BCBCBC;
@@ -25,6 +24,10 @@ html, body{
     width: 100%;
 }
 
+main{
+    height: auto;
+}
+
 .botao{
     background-color: var(--coral-escuro);
     color: var(--branco);
@@ -35,7 +38,7 @@ html, body{
     padding: 10px;
     display: block;
     font-size: 16px;
-    width: 148px;
+    width: 25%;
     box-shadow: none;
     margin-top: 30px;
     margin-bottom: 20%;
@@ -53,12 +56,12 @@ html, body{
 }
 
 .botao-destaque{
-    width: 100%;
+    width: 25%;
     margin: 5px;
 }
 
 .botao-destaque:hover{
-    width: 100%;
+    width: 25%;
 }
 
 
@@ -78,6 +81,7 @@ html, body{
     margin-top: 5%;
     margin-bottom: 10%;
     font-size: 16px;
+    line-height: 25px;
     font-family: var(--poppins);
 }
 
@@ -123,4 +127,11 @@ html, body{
         margin-top: 30%;
         z-index: -1;
     }
+}
+
+@media screen and (min-width: 768px) {
+    .painel-texto{
+        max-width: 500px;
+        margin-bottom: 3%;
+    }  
 }
