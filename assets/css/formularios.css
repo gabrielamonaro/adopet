@@ -4,14 +4,12 @@
     margin-top: 20%;
 }
 
-label{
-   font-weight: 400; 
+.botao{
+    width: 100%;
 }
 
 .label-cinza{
     font-weight: 400;
-    text-align: center;
-    width: 100%;
     color: var(--cinza-medio);
     font-family: var(--poppins);
 }
@@ -23,11 +21,11 @@ label{
     color: var(--azul-escuro)
 }
 
-.formulario-cadastro{
-    color: var(--cinza-medio);
-    width: 45%;
+.secao-input{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
 }
-
 
 .background-cinza{
     background-color: var(--cinza-background);
@@ -56,6 +54,10 @@ label{
     font-family: var(--poppins);
 }
 
+.painel-texto{
+    margin-bottom: 2%;
+}
+
 .formulario-mensagem, 
 .formulario-perfil{
     background-color: var(--cinza-background);
@@ -65,36 +67,30 @@ label{
     margin: 0 5px 15px;
 }
 
-.caixa-input{
-    height: 40px;
-}
-
 .caixa-input::placeholder, 
 .caixa-input-textarea::placeholder{
     color: var(--cinza-claro-input);
     font-size: 12px;
+    font-family: var(--poppins);
 }
 
 .background-cinza::placeholder{
         text-align: center; 
-        color: var(--cinza-claro-input);
-        font-size: 12px;
 }
 
 .senha{
     background-image: url(/assets/img/icones/icone-olho.svg);
     background-repeat: no-repeat;
     background-position: right 10px center ;
-
+    max-width: 362px;
 }
 
 .formulario-login{
-    margin-bottom: 70%;
+    margin-bottom: 180px;
 }
 
 .secao-botao{
-    display: flex;
-    justify-content: center;
+    max-width: 170px;
 }
 
 .caixa-input-textarea{
@@ -110,7 +106,13 @@ label{
     .formulario-cadastro{
         max-width: 400px;
     }
-    
+     .caixa-input{
+        max-width: 344px;
+    } 
+    .background-vertical{
+        top: 10%;
+    }
+
 }
 
 @media screen and (min-width: 768px) {
@@ -118,18 +120,34 @@ label{
     .caixa-input::placeholder, 
     .caixa-input-textarea::placeholder{
     font-size: 14px;
-}
+    }
 
-.logo{
-    margin-top: 10%;
-}
+    .caixa-input{
+    width: 45%;
+    }
 
+    .logo{
+    margin-top: 15%;
+    }
+
+    .background-vertical{
+        top: 20%;
+    }
 }
 
 @media screen and (min-width: 1016px) {
 
-
 .logo{
     margin-top: 5%;
 }
+}
+
+@media screen and (min-width: 1440px) {
+    .caixa-input{
+        width: 44%;
+    } 
+    .senha{
+        width: 30%;
+        max-width: 362px;
+    }
 }

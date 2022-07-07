@@ -11,6 +11,7 @@
     --amarelo: #FDBF12;
     --coral-escuro: #FC7071;
     --coral-claro: #FF9D9E;
+    /* --azul-escur: rgb(55,114,255); */
     --azul-escuro: #3772FF;
     --cinza-background: #F6F6F6;
     --cinza-claro-input: #BCBCBC;
@@ -47,8 +48,7 @@ main{
 .botao:hover{
     background-color: var(--coral-claro);
     border: none;
-    width: 148px;
-    height: auto;
+    height: 48px;
 }
 
 .shadow-botao{
@@ -100,38 +100,39 @@ main{
     position: absolute;
     height: 415px ;
     width: 84.03px;
-    left: 0;
-    background-position: right 0 bottom;
     background-repeat: no-repeat;
-    transform: scale(-1, 1);
-    margin-top: 40%;
-    z-index: -1;
+}
+
+
+
+@media screen and (max-width: 767px){
+    .background-vertical{
+        left: 0;
+        top: 20%;
+        background-position: right 0 bottom;
+        transform: scale(-1, 1);
+        margin-top: 40%;
+        z-index: -1;
+}
 }
 
 @media screen and (min-width: 768px) {
     .painel-texto{
         max-width: 500px;
-        margin-bottom: 3%;
-    }
-    
+        margin-bottom: 0;
+        margin-top: 2%;
+    }  
 
+    
     .background-vertical{
         background-image: url(/assets/img/background/Forma-vertical.svg);
         position: absolute;
         height: 415px ;
         width: 84.03px;
-        left: 0;
-        background-position: right 0 bottom;
+        right: 0;
+        top: 30%;
+        background-position: right 0;
         background-repeat: no-repeat;
-        transform: scale(-1, 1);
-        margin-top: 30%;
         z-index: -1;
     }
-}
-
-@media screen and (min-width: 768px) {
-    .painel-texto{
-        max-width: 500px;
-        margin-bottom: 3%;
-    }  
 }

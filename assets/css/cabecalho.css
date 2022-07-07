@@ -63,6 +63,10 @@
     margin: 0;
 }
 
+.logo-header{
+    margin: 10px 0 0 40px;
+}
+
 
 @media screen and (max-width: 767px) {
     .logo-header{
@@ -77,9 +81,6 @@
 }
 
 @media screen and (min-width: 768px) {
-    .logo-header{
-        margin: 10px 0 0 20px;
-    }
 
     .icones{
         display: flex;
