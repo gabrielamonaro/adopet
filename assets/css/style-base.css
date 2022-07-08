@@ -28,42 +28,6 @@ main{
     height: auto;
 }
 
-.botao{
-    background-color: var(--coral-escuro);
-    color: var(--branco);
-    font-family: var(--poppins);
-    font-weight: bold;
-    border-radius: 8px;
-    border-color: transparent;
-    padding: 10px;
-    display: block;
-    font-size: 16px;
-    width: 25%;
-    box-shadow: none;
-    margin-top: 30px;
-    margin-bottom: 20%;
-}
-
-.botao:hover{
-    background-color: var(--coral-claro);
-    border: none;
-    height: 48px;
-}
-
-.shadow-botao{
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.501);
-}
-
-.botao-destaque{
-    width: 25%;
-    margin: 5px;
-}
-
-.botao-destaque:hover{
-    width: 25%;
-}
-
-
 .painel{
     width: 100%;
     text-align: center;
@@ -71,17 +35,6 @@ main{
     justify-content: center;
     flex-direction: column;
     align-items: center;
-}
-
-.painel-texto{
-    color: var(--azul-escuro);
-    width: 70%;
-    text-align: center;
-    margin-top: 5%;
-    margin-bottom: 10%;
-    font-size: 16px;
-    line-height: 25px;
-    font-family: var(--poppins);
 }
 
 .background-patas{
@@ -103,7 +56,6 @@ main{
 }
 
 
-
 @media screen and (max-width: 767px){
     .background-vertical{
         left: 0;
@@ -115,14 +67,7 @@ main{
 }
 }
 
-@media screen and (min-width: 768px) {    
-    .painel-texto{
-        max-width: 500px;
-        margin-bottom: 0;
-        margin-top: 2%;
-    }  
-
-    
+@media screen and (min-width: 768px) {        
     .background-vertical{
         background-image: url(/assets/img/background/Forma-vertical.svg);
         position: absolute;

@@ -1,13 +1,3 @@
-.logo{
-    width: 32%;
-    min-width: 186.67px;
-    margin-top: 20%;
-}
-
-.botao{
-    width: 100%;
-}
-
 .label-cinza{
     font-weight: 400;
     color: var(--cinza-medio);
@@ -54,10 +44,6 @@
     font-family: var(--poppins);
 }
 
-.painel-texto{
-    margin-bottom: 2%;
-}
-
 .formulario-mensagem, 
 .formulario-perfil{
     background-color: var(--cinza-background);
@@ -72,6 +58,7 @@
     color: var(--cinza-claro-input);
     font-size: 12px;
     font-family: var(--poppins);
+    width: 100%;
 }
 
 .background-cinza::placeholder{
@@ -89,10 +76,6 @@
     margin-bottom: 180px;
 }
 
-.secao-botao{
-    max-width: 170px;
-}
-
 .caixa-input-textarea{
     height: 172px;
 }
@@ -106,13 +89,16 @@
     .formulario-cadastro{
         max-width: 400px;
     }
-     .caixa-input{
-        max-width: 344px;
-    } 
+
     .background-vertical{
         top: 10%;
     }
 
+    .formulario-mensagem, 
+    .formulario-perfil{
+    width: 68%;
+    max-width: 552px;
+    }
 }
 
 @media screen and (min-width: 768px) {
@@ -122,28 +108,25 @@
     font-size: 14px;
     }
 
-    .caixa-input{
-    width: 45%;
-    }
-
-    .logo{
-    margin-top: 15%;
-    }
+    .caixa-input_telas-iniciais{
+        width: 45%;
+        min-width: 352px;
+    } 
 
     .background-vertical{
         top: 20%;
     }
+
+    .formulario-mensagem, 
+    .formulario-perfil{
+    width: 68%;
+    max-width: 552px;
+    }
 }
 
-@media screen and (min-width: 1016px) {
-
-.logo{
-    margin-top: 5%;
-}
-}
 
 @media screen and (min-width: 1440px) {
-    .caixa-input{
+    .caixa-input_telas-iniciais{
         width: 44%;
     } 
     .senha{

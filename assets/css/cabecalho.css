@@ -26,8 +26,8 @@
     width: 100vw;
     padding: 10px ; 
     padding-top: 40px ; 
+    padding-right: 40px;
 }
-
 
 .lista-icones-home{
     display: flex;
@@ -66,7 +66,6 @@
 .logo-header{
     margin: 10px 0 0 40px;
 }
-
 
 @media screen and (max-width: 767px) {
     .logo-header{

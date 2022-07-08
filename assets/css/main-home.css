@@ -20,11 +20,6 @@
     font-weight: 400;
 }
 
-.painel-texto{
-    color: var(--branco);
-    margin-top: 2%;
-}
-
 .ilustracao{
     z-index: -1;
     margin: 2% 40px -18px 0;
@@ -35,11 +30,6 @@
     background-size: contain; 
     width: 100%;
 }
- 
- .logo-principal{
-    display: flex; 
-    justify-content: center;
-} 
 
 .background-vertical-home{
     background-image: url(/assets/img/background/Forma-vertical.svg);
@@ -52,22 +42,8 @@
     z-index: -1;
 }
 
-@media screen and (max-width: 767px) {
-    .botao{
-        width: 190px;
-    }
 
-    .logo-principal{
-        width: 52%;
-    }
-}
 
-@media screen and (min-width: 500px) {
-
-    .painel-texto{
-         margin-bottom: 4%; 
-    }
-}
 
 @media screen and (min-width: 1000px) {
     .painel-principal{

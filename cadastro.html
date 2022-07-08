@@ -10,12 +10,15 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style-base.css"> 
     <link rel="stylesheet" href="assets/css/cabecalho.css">
+    <link rel="stylesheet" href="assets/css/logo.css">
     <link rel="stylesheet" href="assets/css/footer.css">
+    <link rel="stylesheet" href="assets/css/painel-texto.css">
+    <link rel="stylesheet" href="assets/css/botao.css">
     <link rel="stylesheet" href="assets/css/formularios.css">
   
     <title>Adopet</title>
 </head>
-<body class="app">
+<body>
     <header>
         <div class="header-background"></div>
         <div class="background-patas"></div>
@@ -33,12 +36,12 @@
                                 </svg>
                         </li>
                         <ul class="icones">
-<li><a href="#" class="icone-menu"><svg width="20" height="23" viewBox="0 0 20 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <li><a href="#" class="icone-menu"><svg width="20" height="23" viewBox="0 0 20 23" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M0 23V7.66667L9.66 0L19.2 7.66667V23H12.18V13.8958H6.99V23H0ZM1.8 21.0833H5.19V11.9792H13.98V21.0833H17.4V8.625L9.66 2.39583L1.8 8.625V21.0833Z" fill="white"/>
                             </svg> </a></li>
-                       <li><a href="#" class="icone-menu"> <svg width="24" height="19" viewBox="0 0 24 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M1.73542 18.8632C1.27264 18.8632 0.867709 18.6864 0.520625 18.3327C0.173542 17.979 0 17.5664 0 17.0948V1.76843C0 1.29685 0.173542 0.884214 0.520625 0.530528C0.867709 0.176843 1.27264 0 1.73542 0H21.4035C21.8663 0 22.2712 0.176843 22.6183 0.530528C22.9654 0.884214 23.1389 1.29685 23.1389 1.76843V17.0948C23.1389 17.5664 22.9654 17.979 22.6183 18.3327C22.2712 18.6864 21.8663 18.8632 21.4035 18.8632H1.73542ZM11.5695 9.96214L1.73542 3.38949V17.0948H21.4035V3.38949L11.5695 9.96214ZM11.5695 8.19372L21.2878 1.76843H1.88004L11.5695 8.19372ZM1.73542 3.38949V1.76843V3.38949V17.0948V3.38949Z" fill="white"/>
-                        </svg></a></li>
+                            <li><a href="#" class="icone-menu"> <svg width="24" height="19" viewBox="0 0 24 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.73542 18.8632C1.27264 18.8632 0.867709 18.6864 0.520625 18.3327C0.173542 17.979 0 17.5664 0 17.0948V1.76843C0 1.29685 0.173542 0.884214 0.520625 0.530528C0.867709 0.176843 1.27264 0 1.73542 0H21.4035C21.8663 0 22.2712 0.176843 22.6183 0.530528C22.9654 0.884214 23.1389 1.29685 23.1389 1.76843V17.0948C23.1389 17.5664 22.9654 17.979 22.6183 18.3327C22.2712 18.6864 21.8663 18.8632 21.4035 18.8632H1.73542ZM11.5695 9.96214L1.73542 3.38949V17.0948H21.4035V3.38949L11.5695 9.96214ZM11.5695 8.19372L21.2878 1.76843H1.88004L11.5695 8.19372ZM1.73542 3.38949V1.76843V3.38949V17.0948V3.38949Z" fill="white"/>
+                            </svg></a></li>
                         </ul>
                         
                     </ul>   
@@ -52,11 +55,11 @@
             </nav>
     </header>
 
-    <main class="painel-cadastro">
+    <main>
         
        <div class="background-vertical"></div>
        
-       <div class="logo container">
+       <div class="logo-forms container">
             <svg  viewBox="0 0 546 130" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M172.83 0.799805H184.49V96.9998C184.504 98.4072 184.234 99.8029 183.696 101.104C183.158 102.404 182.364 103.583 181.36 104.57C180.402 105.593 179.241 106.407 177.952 106.957C176.662 107.508 175.272 107.785 173.87 107.77H163.24V101.65C156.781 105.548 149.385 107.622 141.84 107.65C136.229 107.732 130.66 106.664 125.478 104.51C120.296 102.357 115.61 99.1644 111.71 95.1298C107.736 91.1712 104.584 86.466 102.436 81.2848C100.287 76.1037 99.184 70.5488 99.19 64.9398C99.1926 59.3425 100.298 53.8005 102.443 48.6306C104.588 43.4606 107.731 38.7639 111.691 34.8088C115.652 30.8537 120.353 27.7176 125.526 25.5799C130.699 23.4421 136.243 22.3445 141.84 22.3498C149.363 22.3631 156.747 24.3714 163.24 28.1698V10.3998C163.24 7.85546 164.25 5.41517 166.048 3.61511C167.846 1.81505 170.286 0.802455 172.83 0.799805ZM163.24 65.5798V64.2698C163.169 60.5886 162.112 56.9938 160.18 53.8598C158.285 50.7514 155.632 48.1744 152.47 46.3698C149.21 44.542 145.533 43.5879 141.796 43.6002C138.058 43.6124 134.388 44.5906 131.14 46.4398C127.91 48.3147 125.225 50.9998 123.35 54.2298C120.971 58.3007 120.009 63.0456 120.616 67.7215C121.222 72.3973 123.362 76.7401 126.7 80.0698C130.659 84.0829 136.05 86.3595 141.687 86.3988C147.324 86.4382 152.745 84.2372 156.76 80.2798C158.755 78.3771 160.355 76.0989 161.467 73.5763C162.579 71.0536 163.181 68.3361 163.24 65.5798Z" fill="#3772FF"/>
                 <path d="M206 34.8698C214.01 26.8663 224.865 22.3639 236.188 22.3489C247.512 22.3339 258.379 26.8076 266.41 34.7898C270.462 38.6828 273.67 43.3671 275.836 48.5519C278.002 53.7367 279.079 59.3114 279 64.9298C279.086 70.5518 278.019 76.1318 275.866 81.3258C273.713 86.5198 270.519 91.2177 266.48 95.1298C262.515 99.0983 257.806 102.247 252.623 104.394C247.44 106.542 241.885 107.648 236.275 107.648C230.665 107.648 225.11 106.542 219.927 104.394C214.744 102.247 210.036 99.0983 206.07 95.1298C202.03 91.2191 198.834 86.5215 196.681 81.3272C194.527 76.1328 193.462 70.5521 193.55 64.9298C193.444 59.3322 194.496 53.7731 196.638 48.6006C198.78 43.4281 201.968 38.7536 206 34.8698ZM221.13 80.1398C223.105 82.1289 225.456 83.7063 228.045 84.7806C230.635 85.8549 233.411 86.4047 236.215 86.3981C239.018 86.3916 241.792 85.8289 244.376 84.7426C246.961 83.6564 249.304 82.0681 251.27 80.0698C253.284 78.1018 254.878 75.745 255.954 73.1424C257.03 70.5399 257.566 67.7458 257.53 64.9298C257.409 59.354 255.109 54.0473 251.123 50.1466C247.137 46.246 241.782 44.0616 236.205 44.0616C230.628 44.0616 225.273 46.246 221.287 50.1466C217.301 54.0473 215.001 59.354 214.88 64.9298C214.85 67.758 215.392 70.5631 216.473 73.1767C217.554 75.7904 219.151 78.1588 221.17 80.1398H221.13Z" fill="#3772FF"/>
@@ -66,30 +69,30 @@
                 <path d="M445.5 76.8498C443.329 80.5656 440.044 83.5043 436.11 85.2498C432.188 87.0525 427.803 87.5941 423.56 86.7998C419.416 86.0802 415.571 84.173 412.49 81.3098L468.56 56.1998L467.9 53.2998C467.826 52.7609 467.695 52.2313 467.51 51.7198C467.172 50.4999 466.744 49.3066 466.23 48.1498C464.504 44.2117 462.139 40.5861 459.23 37.4198C453.369 30.5159 445.375 25.7621 436.51 23.9098C427.579 21.8686 418.224 22.8354 409.9 26.6598C404.343 29.1228 399.377 32.7482 395.339 37.2918C391.301 41.8354 388.284 47.1917 386.49 52.9998C384.75 58.7246 384.218 64.7487 384.93 70.6898C385.774 77.7466 388.404 84.4717 392.57 90.2298C396.394 95.6789 401.447 100.151 407.32 103.284C413.194 106.418 419.722 108.124 426.378 108.265C433.033 108.406 439.628 106.978 445.629 104.097C451.63 101.216 456.869 96.9618 460.92 91.6798C464.283 87.2525 466.759 82.2168 468.21 76.8498H445.5ZM410.38 51.9998C412.487 49.2954 415.237 47.1607 418.38 45.7898C421.511 44.3597 424.945 43.721 428.38 43.9298C431.757 44.1398 435.044 45.1034 438 46.7498L406.12 60.9998C406.855 57.7211 408.31 54.6469 410.38 51.9998Z" fill="#3772FF"/>
             </svg>
        </div>
-       <div class=" painel-texto container">
+       <div class=" painel-texto painel-texto-cadastro container">
         <p>Ainda não tem cadastro?</p>
         <p>Então, antes de buscar seu melhor amigo, precisamos de alguns dados:</p>
        </div>
        
        <form class="formulario-cadastro container">
-        <div class="secao-input form-group container" >
+        <div class="secao-input form-group " >
             <label for="email" class="label-cinza">Email</label>
-            <input type="email"  class="background-cinza form-control  caixa-input" id="email" placeholder="Escolha seu e-mail">
+            <input type="email"  class="background-cinza form-control  caixa-input caixa-input_telas-iniciais" id="email" placeholder="Escolha seu e-mail">
         </div>
-        <div class="secao-input form-group container">
+        <div class="secao-input form-group ">
             <label for="nome" class="label-cinza">Nome</label>
-            <input type="text"  class="background-cinza form-control caixa-input" id="nome" placeholder="Digite seu nome completo">
+            <input type="text"  class="background-cinza form-control caixa-input caixa-input_telas-iniciais" id="nome" placeholder="Digite seu nome completo">
         </div>
-        <div class=" secao-input form-group container">
+        <div class="secao-input form-group ">
             <label for="senha" class="label-cinza">Senha</label>
-            <input type="password" class="senha background-cinza form-control  caixa-input" id="senha" placeholder="Crie uma senha">
+            <input type="password" class="senha background-cinza form-control caixa-input " id="senha" placeholder="Crie uma senha">
         </div>
-        <div class="secao-input form-group container">
+        <div class="secao-input form-group ">
             <label for="confirmacao-senha" class="label-cinza">Confirme sua senha</label>
             <input type="password"  class="senha background-cinza form-control  caixa-input" id="show_hide_password" placeholder="Repita a senha criada acima">
         </div>
         <div class="secao-botao container"> 
-            <input type="submit" value="Cadastrar" class="container botao botao-cadastro">
+            <input type="submit" value="Cadastrar" class="botao-forms botao ">
         </div>
              
         </form>
