@@ -70,3 +70,60 @@
     padding: 0;
     display: flex;
 }
+
+.secao-cards{
+    display: flex;
+
+    justify-content: space-between; 
+ }
+
+@media screen and (min-width: 768px) {
+    .painel-texto{
+        width: 70%;
+        text-align: center;
+        margin-top: 120px;
+        margin-bottom: 05%;
+        font-size: 16px;
+        font-family: var(--poppins);
+    }
+
+    .card{
+        max-width: 49%;
+        margin-right: 5px;
+    }
+
+    .card:nth-child(2n){
+        margin-right: 0;
+        margin-left: 5px;        
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .painel-texto{
+        width: 70%;
+        text-align: center;
+        margin-top: 90px;
+        margin-bottom: 05%;
+        font-size: 16px;
+        font-family: var(--poppins);
+    }
+
+    .card{
+        max-width: 32%;
+        margin-right: 0;
+    }
+
+    .card:nth-child(2n){
+        margin-right: 0;
+        margin-left:0;        
+    }
+
+    .card:nth-child(3n-1){
+         margin-left: 15px;  
+         margin-right: 15px; 
+     }
+
+     .secao-cards{
+        justify-content: center;
+     }
+}

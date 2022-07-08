@@ -11,7 +11,6 @@
     --amarelo: #FDBF12;
     --coral-escuro: #FC7071;
     --coral-claro: #FF9D9E;
-    /* --azul-escur: rgb(55,114,255); */
     --azul-escuro: #3772FF;
     --cinza-background: #F6F6F6;
     --cinza-claro-input: #BCBCBC;
@@ -116,7 +115,7 @@ main{
 }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {    
     .painel-texto{
         max-width: 500px;
         margin-bottom: 0;
