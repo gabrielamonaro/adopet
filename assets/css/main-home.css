@@ -6,6 +6,15 @@
     padding-top: 10%;
 }
 
+form{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .painel-principal{
     display: flex;
     flex-direction: column;
