@@ -36,12 +36,10 @@
     font-size: 12px;
 }
 
-
 .mensagem::before{
     content: url(/assets/img/icones/ícone\ mensagem.svg);
     margin-right: 10px;
 }
-
 
 .mensagem{
     text-decoration: none;
@@ -49,7 +47,6 @@
     font-size: 10px;
     display: flex;
 }
-
 
 @media screen and (min-width: 768px) {
     .card{
@@ -81,5 +78,6 @@
 
      .secao-cards{
         justify-content: center;
+        margin-bottom: 100px;
      }
 }

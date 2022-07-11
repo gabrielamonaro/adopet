@@ -122,6 +122,11 @@
     width: 68%;
     max-width: 552px;
     }
+
+    .formulario-login{
+    margin-bottom: 230px;
+}
+
 }
 
 
@@ -133,4 +138,9 @@
         width: 30%;
         max-width: 362px;
     }
+
+    .formulario-login{
+        margin-bottom: 300px;
+}
+
 }
