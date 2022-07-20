@@ -76,12 +76,18 @@
        <form class="formulario-login container">
         <div class="secao-input caixa-input_telas-iniciais form-group container" >
             <label for="email" class="label-cinza">Email</label>
-            <input type="email"  class=" background-cinza form-control  caixa-input" id="email" placeholder="Escolha seu e-mail">
+            <input type="email"  class=" background-cinza form-control  caixa-input" id="email" required placeholder="Escolha seu e-mail">
+            
         </div>
 
         <div class="secao-input form-group container">
             <label for="senha" class="label-cinza">Senha</label>
-            <input type="password" class="form-control  caixa-input senha background-cinza" id="senha" placeholder="Crie uma senha">
+            <div class="secao-senha">
+                <input type="password" class="form-control  senha" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])\w{6,12}$" title="A senha precisa conter entre 6 e 12 caracteres, sendo pelo menos uma letra maiúscula, pelo menos uma letra minúscula e pelo menos um número." required placeholder="Crie uma senha">
+                <span class="olho" >
+                    <img src="/assets/img/icones/hidden.png" class="olho-img">
+                </span>
+            </div>
         </div>
  
         <div class="secao-botao container"> 
@@ -95,5 +101,6 @@
     </footer>
 
     <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>   -->
+    <script src="/assets/js/password-visibility.js"></script>
 </body>
 </html>

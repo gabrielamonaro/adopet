@@ -22,7 +22,8 @@
 }
 
 .caixa-input, 
-.caixa-input-textarea{
+.caixa-input-textarea, 
+.secao-senha{
     box-shadow: 0px 2px 3px var(--cinza-claro-input);
     border: transparent;
     margin-top: 10px;
@@ -38,6 +39,7 @@
     width:40px;
 }
 
+
 .editar-foto{
     color: var(--coral-escuro);
     font-size: 12px;
@@ -45,7 +47,8 @@
 }
 
 .formulario-mensagem, 
-.formulario-perfil{
+.formulario-perfil, 
+.secao-senha{
     background-color: var(--cinza-background);
     font-family: var(--poppins);
     padding: 15px;
@@ -54,22 +57,45 @@
 }
 
 .caixa-input::placeholder, 
-.caixa-input-textarea::placeholder{
+.caixa-input-textarea::placeholder, 
+.senha::placeholder{
     color: var(--cinza-claro-input);
     font-size: 12px;
     font-family: var(--poppins);
     width: 100%;
 }
 
-.background-cinza::placeholder{
+.background-cinza::placeholder, 
+.senha::placeholder{
         text-align: center; 
 }
 
 .senha{
-    background-image: url(/assets/img/icones/icone-olho.svg);
-    background-repeat: no-repeat;
-    background-position: right 10px center ;
     max-width: 362px;
+    border: transparent;
+    background-color: transparent;
+    font-size:small;
+}
+
+.secao-senha{
+    display: flex;
+    align-items: center;
+    padding: 0 10px 0 0;
+    max-width: 344px;
+    width: 100%;
+}
+.olho{
+    display: flex;
+    align-items: center;
+}
+
+.olho-img{
+    height: 15px;
+    margin-left: 7px;
+}
+
+.olho-img:hover{
+    cursor: pointer;
 }
 
 .formulario-login{
@@ -104,7 +130,8 @@
 @media screen and (min-width: 768px) {
 
     .caixa-input::placeholder, 
-    .caixa-input-textarea::placeholder{
+    .caixa-input-textarea::placeholder, 
+    .senha::placeholder{
     font-size: 14px;
     }
 
@@ -134,10 +161,10 @@
     .caixa-input_telas-iniciais{
         width: 44%;
     } 
-    .senha{
+    .secao-senha{
         width: 30%;
         max-width: 362px;
-    }
+    } 
 
     .formulario-login{
         margin-bottom: 300px;

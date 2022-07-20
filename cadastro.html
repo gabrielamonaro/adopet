@@ -77,20 +77,33 @@
        <form class="formulario-cadastro container">
         <div class="secao-input form-group " >
             <label for="email" class="label-cinza">Email</label>
-            <input type="email"  class="background-cinza form-control  caixa-input caixa-input_telas-iniciais" id="email" placeholder="Escolha seu e-mail">
+            <input type="email"  class="background-cinza form-control  caixa-input caixa-input_telas-iniciais" id="email" placeholder="Escolha seu e-mail" required>
         </div>
         <div class="secao-input form-group ">
             <label for="nome" class="label-cinza">Nome</label>
-            <input type="text"  class="background-cinza form-control caixa-input caixa-input_telas-iniciais" id="nome" placeholder="Digite seu nome completo">
+            <input type="text"  class="background-cinza form-control caixa-input caixa-input_telas-iniciais" id="nome" placeholder="Digite seu nome completo" required>
         </div>
         <div class="secao-input form-group ">
             <label for="senha" class="label-cinza">Senha</label>
-            <input type="password" class="senha background-cinza form-control caixa-input " id="senha" placeholder="Crie uma senha">
+            <div class="secao-senha">
+                <input type="password" class="senha form-control senha" id="senha" placeholder="Crie uma senha" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])\w{6,12}$" title="A senha precisa conter entre 6 e 12 caracteres, sendo pelo menos uma letra maiúscula, pelo menos uma letra minúscula e pelo menos um número." required>
+            <span class="olho" id="1" data-view="habilitado">
+                <img id="01" src="/assets/img/icones/hidden.png" class="olho-img">
+            </span>
+            </div>
+            
         </div>
         <div class="secao-input form-group ">
             <label for="confirmacao-senha" class="label-cinza">Confirme sua senha</label>
-            <input type="password"  class="senha background-cinza form-control  caixa-input" id="show_hide_password" placeholder="Repita a senha criada acima">
+            <div class="secao-senha">
+                <input type="password" id="confirmacao-senha" class="senha form-control "  placeholder="Repita a senha criada acima"  pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])\w{6,12}$" title="A senha precisa conter entre 6 e 12 caracteres, sendo pelo menos uma letra maiúscula, pelo menos uma letra minúscula e pelo menos um número." required>
+            <span class="olho">
+                <img  src="/assets/img/icones/hidden.png" class="olho-img">
+            </span>
+            </div>
+            
         </div>
+
         <div class="secao-botao container"> 
             <input type="submit" formaction="/perfil.html" value="Cadastrar" class="botao-forms botao ">
         </div>
@@ -105,5 +118,7 @@
     </footer>
 
     <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>   -->
+<script src="/assets/js/password-visibility.js"></script>
+<script src="/assets/js/validacao-confirma-senha.js"></script>
 </body>
 </html>
