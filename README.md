@@ -10,3 +10,4 @@ O propósito do projeto é aplicar os conhecimentos em Front End. Nas duas prime
 
 ## Tecnologias utilizadas
 - HTML / CSS com Bootstrap
+- JavaScript
